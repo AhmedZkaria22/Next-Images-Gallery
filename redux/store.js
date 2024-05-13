@@ -5,7 +5,8 @@ import rootReducer from "./reducer";
 import { fetchFailure, fetchRequest, fetchPhotosSuccess, fetchTopicsSuccess } from "./actions";
 import { composeWithDevTools } from "@redux-devtools/extension";
 
-const clientId = process.env.NEXT_PUBLIC_UNSPLASH_CLIENT_ID;
+const clientId = "uUbiAYTVGz2Cag0FW2j_s_XZxasP_FxBs8tvR-1_qB4";
+
 const unsplash = createApi({ accessKey: clientId });
 
 export const fetchPhotosFiltered = (successFunction, querySearch) => {
